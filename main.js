@@ -29,8 +29,10 @@ $(document).ready(function(){
             //inserisco il numero nel mio quadrato
             mioquadrato.text(data.response);
           }
-        }//chiusura funzione in caso di successo
-
+        },//chiusura funzione in caso di successo
+        error:function(){//se l'esito della chiamata è negativo
+          alert("ops errore");
+        }//chiusura funzione in caso di errore
 
 
       });//chiusura chiamata api
