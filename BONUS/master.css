@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 .box-griglia{
+  display: flex;
+  flex-wrap: wrap;
   width:500px;
   height:500px;
 
 }
-.riga{
-  display: flex;
-}
+
 .box-quadrato{
   display: flex;
   justify-content: center;
@@ -26,4 +26,17 @@
 }
 .green-box{
   background-color:green;
+}
+button{
+  padding:30px;
+  background-color:white;
+  color:black;
+  border:2px solid black;
+  display: flex;
+  justify-content: center;
+}
+button:hover{
+  background-color:gray;
+  color:black;
+  border:none;
 }
