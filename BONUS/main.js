@@ -26,12 +26,14 @@ $(document).ready(function(){
         console.log("sei nel giallo");
         // aggiungo la classe per lo sfondo giallo
         mioquadrato.addClass('yellow-box');
+        mioquadrato.removeClass('green-box');
         // inserisco il numero nel mio quadrato
         mioquadrato.text(data.response);
       }else{//se il numero va da 5 a 9
         console.log("sei nel verde");
         // aggiungo la classe per lo sfondo verde
         mioquadrato.addClass('green-box');
+        mioquadrato.removeClass('yellow-box')
         //inserisco il numero nel mio quadrato
         mioquadrato.text(data.response);
       }
