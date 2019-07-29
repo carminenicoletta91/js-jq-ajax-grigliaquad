@@ -5,7 +5,7 @@
 $(document).ready(function(){
 
   // creo un evento di tipo click per tutti i quadrati della mia griglia
-  $(".box-griglia .riga .box-quadrato").click(
+  $(".box-griglia .riga .box-quadrato").one('click',
     function(){
       // salvo l'oggetto cliccato in una variabile
       var mioquadrato = $(this);
